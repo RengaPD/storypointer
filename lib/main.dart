@@ -197,7 +197,7 @@ class _MyHomePageState extends State<MyHomePage> {
     String maglietta = "S";
     if(storypoints> 8){maglietta="M";}
     if(storypoints> 20){maglietta="L";}
-    if(storypoints> 40){maglietta="XL";}
+    if(storypoints== 40){maglietta="XL";}
     if(storypoints== 100){maglietta="XXL";}
     return maglietta;
   }
