@@ -156,7 +156,7 @@ class _MyHomePageState extends State<MyHomePage> {
     int storypoints = fibonacciatore(areanormalizzata);
     String maglietta = magliettatore(storypoints);
 
-    return "Story Pointer: "+ storypoints.toString()+", Maglietta: "+ maglietta;
+    return "Story Pointer: "+ storypoints.toString()+", T-Shirt Size: "+ maglietta;
   }
 
   double calcolaArea(List<int> data) {
@@ -196,7 +196,9 @@ class _MyHomePageState extends State<MyHomePage> {
   String magliettatore(int storypoints) {
     String maglietta = "S";
     if(storypoints> 8){maglietta="M";}
-    if(storypoints> 40){maglietta="L";}
+    if(storypoints> 20){maglietta="L";}
+    if(storypoints> 40){maglietta="XL";}
+    if(storypoints== 100){maglietta="XXL";}
     return maglietta;
   }
 }
